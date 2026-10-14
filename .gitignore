@@ -1,0 +1,11 @@
+.vs/
+**/.vs/
+
+# Build output folders
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Explicit .NET 10 debug output
+**/bin/Debug/net10/
