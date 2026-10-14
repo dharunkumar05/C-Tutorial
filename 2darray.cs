@@ -27,7 +27,8 @@ class Maximum
             {
                 Console.WriteLine(arr[i] + " is even");
             }
-            else
+            else 
+            
             {
                 Console.WriteLine(arr[i] + " is odd");
             }
