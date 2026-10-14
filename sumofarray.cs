@@ -16,6 +16,7 @@ class maximumof2darray{
                 arr[i,j] = Convert.ToInt32(Console.ReadLine());
             }
         }
+        Console.WriteLine($"the last index of the array is  {arr.GetUpperBound(0)}  {arr.GetUpperBound(1)}");
         int max = arr[0,0];
         int sum = 0;
         for(int i = 0; i < row; i++)

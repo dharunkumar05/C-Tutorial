@@ -21,5 +21,16 @@ class Maximum
             }
         }
         Console.WriteLine("maxi is " + max);
+        for(int i = 0; i < n; i++)
+        {
+            if(arr[i]%2 == 0)
+            {
+                Console.WriteLine(arr[i] + " is even");
+            }
+            else
+            {
+                Console.WriteLine(arr[i] + " is odd");
+            }
+        }
     }
 }
