@@ -10,7 +10,7 @@ class Threedarray
         int col = Convert.ToInt32(Console.ReadLine());
         Console.Write("Enter the no. of layers");
         int layer = Convert.ToInt32(Console.ReadLine());
-        int [,,] arr = new int[row,col,layer];
+        int [,,] arr = new int[layer,row,col];
         for(int i = 0; i < layer; i++)
         {
             for(int j = 0; j < row; j++)
@@ -25,7 +25,8 @@ class Threedarray
         int max = arr[0,0,0];
         int sum = 0;
         for (int i = 0; i < layer; i++)
-        {
+        {   
+            
             for(int j =0; j < row; j++)
             {
                 for(int k = 0; k < col; k++)
@@ -39,6 +40,23 @@ class Threedarray
             }
         }
         Console.WriteLine("Sum is " + sum + "\n" + "max is " + max);
-
+        for(int i = 0; i < layer; i++)
+        {   
+            for(int j = 0; j < row; j++)
+            {
+                for(int k = 0; k < col; k++)
+                {
+                    if(arr[i,j,k]%2 == 0)
+                    {
+                        Console.WriteLine(arr[i,j,k] + " is even");
+                    }
+                    else 
+                    
+                    {
+                        Console.WriteLine(arr[i,j,k] + " is odd");
+                    }
+                }
+            }
     }
+}
 }
