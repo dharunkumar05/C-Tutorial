@@ -62,6 +62,13 @@ class Nonegenericcollection
             sl.Add(i,Console.ReadLine());
         }
         sl.RemoveAt(1);
+        for (int i = 0; i < size; i++)
+        {
+            if (sl.ContainsValue("chennai"))
+            {
+                sl.Remove(i);
+            }
+        }
         foreach(DictionaryEntry obj in sl)
         {
             Console.WriteLine(obj.Key + " " + obj.Value);
