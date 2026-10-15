@@ -23,7 +23,7 @@ class Nonegenericcollection
         {
             Console.WriteLine(obj);
         }*/
-        Hashtable ht = new Hashtable();
+        /*Hashtable ht = new Hashtable();
         for (int i = 0; i < size; i ++)
         {
             ht.Add(i,Console.ReadLine());
@@ -44,7 +44,7 @@ class Nonegenericcollection
             Console.WriteLine(obj);
         }
         */
-        for (int i = 0; i < size; i++)
+        /*for (int i = 0; i < size; i++)
         {
             if (ht.ContainsValue("chennai"))
             {
@@ -53,6 +53,16 @@ class Nonegenericcollection
         }
         Console.WriteLine("After removing chennai");
         foreach(DictionaryEntry obj in ht)
+        {
+            Console.WriteLine(obj.Key + " " + obj.Value);
+        }*/
+        SortedList sl = new SortedList();
+        for(int i = 0;i< size ; i++)
+        {
+            sl.Add(i,Console.ReadLine());
+        }
+        sl.RemoveAt(1);
+        foreach(DictionaryEntry obj in sl)
         {
             Console.WriteLine(obj.Key + " " + obj.Value);
         }
