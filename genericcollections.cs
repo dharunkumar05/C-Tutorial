@@ -1,5 +1,7 @@
 using System;
 
+using System.Collections.Generic;
+
 class GEnericcollections
 {
     static void Main()
@@ -30,7 +32,8 @@ class GEnericcollections
         int size = Convert.ToInt32(Console.ReadLine());
         for(int i = 0; i < size; i++)
         {
-            hs.Add(Console.ReadLine());
+            string input = Console.ReadLine() ?? "";
+            hs.Add(input);
         }   
         Console.Write("the elements in the hashset are : ");
         foreach(String i in hs)
