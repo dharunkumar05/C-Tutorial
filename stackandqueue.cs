@@ -11,7 +11,7 @@ class Stackandqueue
         {
             a.Push(Console.ReadLine());
             b.Enqueue(Console.ReadLine());      
-        }   
+        } 
         a.Pop();
         b.Dequeue();
         foreach(Object obj in a)
