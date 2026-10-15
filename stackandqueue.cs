@@ -1,6 +1,6 @@
 using System;
 using System.Collections;
-class stackandqueue
+class Stackandqueue
 {
     static void Main()
     {
